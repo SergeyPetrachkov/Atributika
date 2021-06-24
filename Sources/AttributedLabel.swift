@@ -83,6 +83,11 @@ import UIKit
         set { textView.adjustsFontForContentSizeCategory = newValue }
         get { return textView.adjustsFontForContentSizeCategory }
     }
+
+    @IBInspectable open var textContainerInset: UIEdgeInsets {
+        set { textView.textContainerInset = newValue }
+        get { return textView.textContainerInset }
+    }
     
     @IBInspectable open var font: UIFont = .preferredFont(forTextStyle: .body) {
         didSet {
